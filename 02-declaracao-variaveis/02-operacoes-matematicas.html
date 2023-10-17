@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operações Matemáticas</title>
+</head>
+<body>
+    <h1>Calculadora simples</h1>
+    <script>
+        // Solicitar dois valores ao usuário
+        var valor1 = parseFloat(prompt("Digite o primeiro valor:"));
+        var valor2 = parseFloat(prompt("Digite o segundo valor:"));
+
+        // Verificar se os valores são válidos (números)
+        if (isNaN(valor1) || isNaN(valor2)) {
+            document.write("Valores inválidos. Certifique-se de digitar números.");
+        } else {
+            // Realizar operações de adição e subtração
+            var soma = valor1 + valor2;
+            var subtracao = valor1 - valor2;
+
+            // Exibir o resultado em HTML
+            document.write(`Adição: ${valor1} + ${valor2} = ${soma}  <br>`);
+            document.write(`Subtração: ${valor1} - ${valor2} = ${soma}  <br>`);
+            document.write(`Multiplicação: `);
+            document.write(`Divisão: `);
+            document.write(`Resto da Divisão: `);
+            document.write(`Exponenciação: `);
+            document.write(`Incremento do valor1: `);
+            document.write(`Decremento do valor2: `);
+            
+        }
+    </script>
+    
+</body>
+</html>
