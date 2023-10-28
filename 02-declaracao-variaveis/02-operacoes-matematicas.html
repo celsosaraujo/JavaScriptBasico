@@ -17,19 +17,30 @@
         if (isNaN(valor1) || isNaN(valor2)) {
             document.write("Valores inválidos. Certifique-se de digitar números.");
         } else {
+
             // Realizar operações de adição e subtração
-            var soma = valor1 + valor2;
+
+            let soma;
+
+            soma = valor1 + valor2;
             var subtracao = valor1 - valor2;
+            var multiplicacao = valor1 * valor2;
+            var divisao = valor1 / valor2;
+            var restoDivisao = valor1 % valor2;
+            var exponeciacao = valor1 ** valor2;
+            var incremento = ++valor1;
+            var decremento = --valor2;
+
 
             // Exibir o resultado em HTML
             document.write(`Adição: ${valor1} + ${valor2} = ${soma}  <br>`);
-            document.write(`Subtração: ${valor1} - ${valor2} = ${soma}  <br>`);
-            document.write(`Multiplicação: `);
-            document.write(`Divisão: `);
-            document.write(`Resto da Divisão: `);
-            document.write(`Exponenciação: `);
-            document.write(`Incremento do valor1: `);
-            document.write(`Decremento do valor2: `);
+            document.write(`Subtração: ${valor1} - ${valor2} = ${subtracao}  <br>`);
+            document.write(`Multiplicação: ${valor1} * ${valor2} = ${multiplicacao}  <br>`);
+            document.write(`Divisão: ${valor1} / ${valor2} = ${divisao}  <br>`);
+            document.write(`Resto da Divisão:  de ${valor1} por ${valor2}  é ${restoDivisao}  <br>`);
+            document.write(`Exponenciação:  ${valor1} elevado a ${valor2}  =  ${exponeciacao}  <br>`);
+            document.write(`Incremento do valor1: ${incremento} <br>`);
+            document.write(`Decremento do valor2: ${decremento} <br>`);
             
         }
     </script>
