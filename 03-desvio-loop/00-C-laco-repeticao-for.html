@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Laço de Repetição "for" para Cálculo da Tabuada</title>
+</head>
+<body>
+    <h1>Laço de Repetição "for" para Cálculo da Tabuada</h1>
+
+    <p>O laço de repetição "for" é uma estrutura de controle essencial em JavaScript para a realização de tarefas repetitivas. Neste exemplo, usaremos um laço "for" para calcular a tabuada de um número escolhido e exibi-la diretamente na página HTML.</p>
+
+    <h2>Exemplo de Uso:</h2>
+
+    <pre>
+    <code>
+<strong>Criar: 09-laco-de-repeticao-for.html</strong>&lt;br&gt;;                                            
+for (var i = 0; i < 5; i++) {
+    document.write("Número: " + i + "&lt;br&gt;");
+}
+    </code>
+    </pre>
+    <p>Neste exemplo, o "for" é usado para iterar de 0 a 4. A variável de controle "i" é inicializada como 0, e o laço continua enquanto "i" for menor que 5. Após cada iteração, "i" é incrementada em 1.</p>
+    <p>O resultado será:</p>
+    <pre>
+Número: 0
+Número: 1
+Número: 2
+Número: 3
+Número: 4
+    </pre>
+    <p>O laço "for" é uma ferramenta poderosa para executar tarefas repetitivas e percorrer coleções de dados, como arrays. Ele permite automatizar processos e simplificar o código, tornando-o mais eficiente e legível.</p>
+    <pre>
+    <code>
+<strong>Criar: 10-laco-de-repeticao-for-tabuada.html</strong>&lt;br&gt;                                    
+    var numero = 7; // Substitua pelo número desejado
+    var resultado = "";
+
+    for (var i = 1; i <= 10; i++) {
+        resultado += numero + " x " + i + " = " + (numero * i) + "&lt;br&gt;";
+    }
+
+    document.write(resultado);
+
+    </code>
+    </pre>
+</body>
+</html>

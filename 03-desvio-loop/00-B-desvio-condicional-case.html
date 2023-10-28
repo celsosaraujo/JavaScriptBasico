@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Estrutura de Controle "switch" em JavaScript</title>
+</head>
+<body>
+    <h1>Estrutura de Controle "switch" em JavaScript</h1>
+
+    <p>A estrutura de controle "switch" é usada em JavaScript para realizar testes de múltiplos casos (cases) com base no valor de uma expressão. Ela é especialmente útil quando você precisa tomar decisões com base em várias opções possíveis. O "switch" é frequentemente utilizado para criar declarações de caso (case statements).</p>
+
+    <h2>Sintaxe Básica do "switch":</h2>
+
+    <pre>
+    <code>
+switch (expressão) {
+    case valor1:
+        // Código a ser executado se expressão igual a valor1
+        break;
+    case valor2:
+        // Código a ser executado se expressão igual a valor2
+        break;
+    // Outros casos
+    default:
+        // Código a ser executado se nenhum caso corresponder
+}
+    </code>
+    </pre>
+
+    <p>No exemplo acima, a expressão é avaliada e o "switch" direciona o fluxo do programa para o caso correspondente. Cada caso contém um bloco de código a ser executado. A instrução "break" é usada para sair do "switch" após a execução do caso correspondente.</p>
+
+    <h2>Exemplo de Uso:</h2>
+
+    <pre>
+    <code>
+<strong>Criar: 07-controle-switch.html</strong><br>                
+var diaDaSemana = 3;
+
+switch (diaDaSemana) {
+    case 1:
+        document.write("Hoje é segunda-feira.");
+        break;
+    case 2:
+        document.write("Hoje é terça-feira.");
+        break;
+    case 3:
+        document.write("Hoje é quarta-feira.");
+        break;
+    case 4:
+        document.write("Hoje é quinta-feira.");
+        break;
+    case 5:
+        document.write("Hoje é sexta-feira.");
+        break;
+    case 6:
+        document.write("Hoje é sábado.");
+        break;
+    case 7:
+        document.write("Hoje é domingo.");
+        break;
+    default:
+        document.write("Dia inválido.");
+}
+    </code>
+    </pre>
+
+    <p>Neste exemplo, o "switch" é usado para determinar o dia da semana com base no valor da variável "diaDaSemana". Cada caso corresponde a um dia da semana, e o bloco de código apropriado é executado.</p>
+    <pre>
+        <code>
+<strong>Criar: 08-controle-switch-estados-brasil.html</strong><br>                            
+    var uf = "SP";
+    var nomeEstado;
+    
+    switch (uf) {
+        case "AC":
+            nomeEstado = "Acre";
+            break;
+        case "AL":
+            nomeEstado = "Alagoas";
+            break;
+        case "AM":
+            nomeEstado = "Amazonas";
+            break;
+        case "AP":
+            nomeEstado = "Amapá";
+            break;
+        case "BA":
+            nomeEstado = "Bahia";
+            break;
+        case "CE":
+            nomeEstado = "Ceará";
+            break;
+        case "DF":
+            nomeEstado = "Distrito Federal";
+            break;
+        case "ES":
+            nomeEstado = "Espírito Santo";
+            break;
+        case "GO":
+            nomeEstado = "Goiás";
+            break;
+        case "MA":
+            nomeEstado = "Maranhão";
+            break;
+        case "MG":
+            nomeEstado = "Minas Gerais";
+            break;
+        case "MS":
+            nomeEstado = "Mato Grosso do Sul";
+            break;
+        case "MT":
+            nomeEstado = "Mato Grosso";
+            break;
+        case "PA":
+            nomeEstado = "Pará";
+            break;
+        case "PB":
+            nomeEstado = "Paraíba";
+            break;
+        case "PE":
+            nomeEstado = "Pernambuco";
+            break;
+        case "PI":
+            nomeEstado = "Piauí";
+            break;
+        case "PR":
+            nomeEstado = "Paraná";
+            break;
+        case "RJ":
+            nomeEstado = "Rio de Janeiro";
+            break;
+        case "RN":
+            nomeEstado = "Rio Grande do Norte";
+            break;
+        case "RO":
+            nomeEstado = "Rondônia";
+            break;
+        case "RR":
+            nomeEstado = "Roraima";
+            break;
+        case "RS":
+            nomeEstado = "Rio Grande do Sul";
+            break;
+        case "SC":
+            nomeEstado = "Santa Catarina";
+            break;
+        case "SE":
+            nomeEstado = "Sergipe";
+            break;
+        case "SP":
+            nomeEstado = "São Paulo";
+            break;
+        case "TO":
+            nomeEstado = "Tocantins";
+            break;
+        default:
+            nomeEstado = "UF não encontrada";
+    }
+    
+    document.write("A UF " + uf + " corresponde a " + nomeEstado + ".");
+        </code>
+        </pre>
+    
+        <p>Neste exemplo, a variável `uf` contém a sigla da UF que desejamos consultar, e o "switch" é usado para determinar o nome do estado correspondente. O bloco de código dentro do caso apropriado é executado e, no final, o resultado é exibido na página.</p>
+</body>
+</html>

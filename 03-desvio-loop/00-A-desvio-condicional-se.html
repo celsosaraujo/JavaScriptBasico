@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=], initial-scale=1.0">
+        <title>Desvio Condicional SE</title>
+    </head>
+<body>
+    <h1>Desvio Condicional "if" em JavaScript: Tomando Decisões no Código</h1>
+
+    <p>O desvio condicional "if" é uma estrutura fundamental em JavaScript e em muitas outras linguagens de programação. Ele permite que você tome decisões no seu código, executando blocos de código diferentes com base em condições específicas. Neste tópico, vamos explorar o uso do "if" em JavaScript.</p>
+
+    <h2>Principais Pontos:</h2>
+
+    <ol>
+        <li><strong>Sintaxe Básica:</strong></li>
+        <p>A estrutura "if" é usada para avaliar uma condição. Se a condição for verdadeira, o bloco de código dentro do "if" é executado.</p>
+        <pre>
+if (condição) {
+    // Código a ser executado se a condição for verdadeira
+}
+        </pre>
+
+        <li><strong>Condições:</strong></li>
+        <p>A "condição" é uma expressão que avalia para verdadeira (true) ou falsa (false). Se a condição for verdadeira, o código dentro do "if" será executado; caso contrário, ele será ignorado.</p>
+        <pre>
+<strong>Criar: 01-desvio-condicional-se.html</strong><br>            
+var idade = 18;
+if (idade >= 18) {
+    document.write("Pode votar!");
+}
+        </pre>
+
+        <li><strong>"else" (Senão):</strong></li>
+        <p>Você pode adicionar uma cláusula "else" após um bloco "if" para especificar um código a ser executado quando a condição for falsa.</p>
+        <pre>
+<strong>Criar: 02-desvio-condicional-se-senao.html</strong><br>
+var idade = 16;
+if (idade >= 18) {
+    document.write("Pode votar!");
+} else {
+    document.write("Não pode votar.");
+}
+        </pre>
+
+        <li><strong>"else if" (Senão Se):</strong></li>
+        <p>Quando você tem várias condições a serem testadas, você pode usar "else if" para verificar condições adicionais após o "if" inicial.</p>
+        <pre>
+<strong>Criar: 03-desvio-condicional-se-senaose-senao.html</strong><br>
+var pontuação = 75;
+if (pontuação >= 90) {
+    document.write("Aprovado com distinção!");
+} else if (pontuação >= 60) {
+    document.write("Aprovado");
+} else {
+    document.write("Reprovado");
+}
+        </pre>
+
+        <li><strong>Operadores Condicionais:</strong></li>
+        <p>Operadores condicionais, como "==", "!=", ">", "<", ">=" e "<=", são usados para comparar valores e criar condições em declarações "if".</p>
+        <pre>
+<strong>Criar: 04-desvio-condicional-operadores-condicionais.html</strong><br>
+var x = 10;
+var y = 5;
+if (x > y) {
+    document.write("x é maior que y.");
+}
+        </pre>
+
+        <li><strong>Aninhamento de "if":</strong></li>
+        <p>Você pode aninhar várias instruções "if" dentro de outras instruções "if" para lidar com lógica complexa.</p>
+        <pre>
+<strong>Criar: 05-desvio-condicional-se-aninhado.html</strong><br>            
+var x = 10;
+var y = 5;
+if (x > 5) {
+    if (y > 2) {
+        document.write("x é maior que 5 e y é maior que 2.");
+    }
+}
+        </pre>
+
+        <li><strong>Operadores Lógicos:</strong></li>
+        <p>Você pode usar operadores lógicos, como "&&" (E) e "||" (OU), para combinar condições em declarações "if" mais complexas.</p>
+        <pre>
+<strong>Criar: 06-desvio-condicional-operadores-logicos.html</strong><br>            
+var aprovado = true;
+var frequencia = 80;
+if (aprovado && frequencia >= 75) {
+    document.write("Aprovado por nota e frequência.");
+}
+        </pre>
+    </ol>
+    
+</body>
+
+</html>

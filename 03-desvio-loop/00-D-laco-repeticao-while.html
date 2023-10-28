@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Laço de Repetição "while" em JavaScript</title>
+</head>
+<body>
+    <h1>Laço de Repetição "while" em JavaScript</h1>
+
+    <p>O laço de repetição "while" é uma estrutura de controle em JavaScript que permite executar um bloco de código enquanto uma condição especificada for verdadeira. É útil quando você não sabe antecipadamente quantas vezes o código deve ser executado, mas deseja continuar até que uma condição seja atendida.</p>
+
+    <h2>Sintaxe Básica do "while":</h2>
+
+    <pre>
+    <code>
+while (condição) {
+    // Código a ser repetido
+}
+    </code>
+    </pre>
+
+    <p>No exemplo acima, o bloco de código dentro do "while" é executado repetidamente enquanto a condição especificada for verdadeira. A condição é avaliada antes de cada iteração, e se a condição se tornar falsa, o laço é interrompido.</p>
+
+    <h2>Exemplo de Uso:</h2>
+
+    <p>Aqui está um exemplo de uso do "while" para contar de 1 a 5:</p>
+
+    <pre>
+    <code>
+<strong>Criar: 11-laco-de-repeticao-while.html</strong><br>
+var numeroInicial = 1;
+var numeroFinal = 5
+while (numeroInicial <= numeroFinal) {
+    document.write("Contagem: " + numeroInicial + "&lt;br&gt;");
+    numeroInicial++;
+}
+    </code>
+    </pre>
+
+    <p>Neste exemplo, o "while" é usado para repetir a contagem enquanto o valor do contador for menor ou igual a 5. O contador é incrementado em cada iteração.</p>
+<code>
+<pre>
+<strong>Criar: 12-laco-de-repeticao-while-nomes.html</strong><br>
+    var nomes = [];
+    var nome;
+    var contador = 0;
+    
+    while (true) {
+        nome = prompt("Digite um nome ou 'sair' para encerrar:");
+        if (nome === "sair") {
+            break;
+        }
+        nomes.push(nome);
+        contador++;
+    }
+    
+    document.write("Você digitou " + contador + " nome(s). ");
+    document.write("Nomes informados: ");
+    for (var i = 0; i < nomes.length; i++) {
+        document.write(nomes[i] + "&lt;br&gt;");
+    }
+</code>
+</pre>
+
+</body>
+</html>
