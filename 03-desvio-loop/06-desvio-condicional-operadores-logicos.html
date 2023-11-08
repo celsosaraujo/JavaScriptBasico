@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathan</title>
+</head>
+
+<body>
+    <script>
+
+        let aprovado = prompt("Você foi aprovado? True para sim ou False para não.").toLowerCase();
+        aprovado = aprovado == "true";
+        let frequencia = parseInt(prompt("Qual sua frequência?"));
+
+        // if (aprovado == "true" && frequencia >= 75) {
+        if (aprovado && frequencia >= 75) {
+            document.write("Aprovado por nota e frequência.");
+        } else if(!aprovado || frequencia < 75 ) {
+            document.write("reprovado por nota ou frequência.");
+        }
+
+        // else if(aprovado && frequencia < 75) {
+        //     document.write("Reprovado em falta!")
+        // }
+
+        // // else if(aprovado == "false" && frequencia < 75){
+        // else if(aprovado == false && frequencia < 75){
+        //     document.write("Reprovado por nota e frequência!")
+        // }
+
+        // else if(!aprovado && frequencia > 75){
+        //     document.write("Reprovado por nota!")
+        // }
+
+    </script>
+
+</body>
+
+</html>
