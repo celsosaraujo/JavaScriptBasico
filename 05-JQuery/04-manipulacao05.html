@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    Selecione seu personagem favorite:
+    <select name="Comics" multiple="multiple">
+        <option>Thor</option>
+        <option>Hulk</option>
+        <option>Spider man </option>
+        <option>Batman</option>
+    </select>
+    <div></div>
+    <script>
+        $("select").change(function () {
+            var escolhido = "";
+            $("select option:selected").each(function () {
+                Escolhido += $(this).text() + " ";
+            });
+            alert("Você prefere o " + escolhido);
+        })
+            .change();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <title>Iniciando com jQuery</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("div").animate({ left: '310px' });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    Clique no botão para animar a div.
+    <div style="background:red;height:30px;width:30px;position:absolute;">
+    </div>
+    <button>Clique aqui</button>
+</body>
+
+</html>
