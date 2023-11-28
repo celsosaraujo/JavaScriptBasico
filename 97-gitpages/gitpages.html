@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial GitHub Pages</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Publicando no GitHub Pages: Um Tutorial Simples</h1>
+
+    <h2>Passo 1: Crie um Repositório</h2>
+    <p>Crie um repositório no GitHub para o seu projeto. Certifique-se de ter um arquivo <code>index.html</code> na raiz ou em um diretório chamado <code>docs</code> ou <code>public</code>.</p>
+
+    <h2>Passo 2: Estrutura do Repositório</h2>
+    <p>Verifique se a estrutura do seu repositório está adequada para um site. Por exemplo:</p>
+    <pre><code>.
+|-- index.html
+|-- style.css
+|-- script.js
+</code></pre>
+
+    <h2>Passo 3: Ative o GitHub Pages</h2>
+    <p>Vá para as configurações do seu repositório, vá até a seção "GitHub Pages" e escolha o branch desejado. Clique em "Save".</p>
+
+    <h2>Passo 4: Acesse seu Site</h2>
+    <p>Após ativar o GitHub Pages, seu site estará disponível em:</p>
+    <p><code>https://seunomeusuario.github.io/seurepositorio</code></p>
+
+    <h2>Passo 5: Atualize Seu Site</h2>
+    <p>Cada vez que você fizer push para o branch selecionado, seu site será atualizado automaticamente.</p>
+    <h2>Passo 6: Configurando um Domínio Personalizado</h2>
+    <p>Se você possui um domínio próprio, pode configurá-lo para apontar para o seu site no GitHub Pages. Aqui está como:</p>
+
+    <h3>Subpasso 6.1: Compre um Domínio</h3>
+    <p>Adquira um domínio de um registrador de domínios de sua escolha, como GoDaddy, Namecheap ou Google Domains.</p>
+
+    <h3>Subpasso 6.2: Configurando o Domínio no GitHub</h3>
+    <ol>
+        <li>No seu repositório do GitHub, vá para as configurações.</li>
+        <li>Na seção "GitHub Pages", adicione o seu domínio personalizado no campo "Custom domain".</li>
+        <li>GitHub Pages gerará automaticamente um arquivo chamado <code>CNAME</code> no seu repositório. Certifique-se de que esse arquivo está presente.</li>
+    </ol>
+
+    <h3>Subpasso 6.3: Configurando as Configurações DNS</h3>
+    <p>Acesse o painel de controle do seu registrador de domínios e configure as configurações DNS. Crie registros CNAME apontando para <code>seunomeusuario.github.io</code>.</p>
+
+    <pre><code>
+    Tipo: CNAME
+    Nome: www (ou o subdomínio desejado)
+    Valor: seunomeusuario.github.io
+    </code></pre>
+
+    <h3>Subpasso 6.4: Aguarde a Propagação DNS</h3>
+    <p>Após configurar as configurações DNS, pode levar algum tempo para que as alterações se propaguem pela internet. Isso pode levar algumas horas até 48 horas.</p>
+
+    <h2>Passo 7: Acesse Seu Site com o Domínio Personalizado</h2>
+    <p>Depois que a propagação DNS estiver completa, seu site estará disponível em seu domínio personalizado, por exemplo, <code>www.seudominio.com</code>.</p>
+
+    <h2>Considerações Finais</h2>
+    <p>Parabéns! Agora, seu site no GitHub Pages está associado ao seu próprio domínio.</p>
+
+    <!-- Script JavaScript aqui -->
+
+</body>
+</html>
