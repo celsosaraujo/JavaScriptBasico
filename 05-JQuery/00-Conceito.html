@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <title>Introdução ao jQuery</title>
 </head>
+
 <body>
     <h1>Introdução ao jQuery</h1>
 
-    <p>O jQuery é uma biblioteca JavaScript popular que simplifica a interação com documentos HTML, manipulação do DOM (Modelo de Documento) e criação de animações e efeitos interativos em páginas da web. Ele foi projetado para ser de fácil uso e é amplamente adotado por desenvolvedores web para simplificar o desenvolvimento de aplicações web dinâmicas.</p>
+    <p>O jQuery é uma biblioteca JavaScript popular que simplifica a interação com documentos HTML, manipulação do DOM
+        (Modelo de Documento) e criação de animações e efeitos interativos em páginas da web. Ele foi projetado para ser
+        de fácil uso e é amplamente adotado por desenvolvedores web para simplificar o desenvolvimento de aplicações web
+        dinâmicas.</p>
 
     <h2>Benefícios do jQuery</h2>
 
@@ -22,8 +27,11 @@
 
     <h2>Seletores do jQuery</h2>
 
-    <p>Um dos recursos mais poderosos do jQuery é a capacidade de selecionar elementos HTML usando seletores. Isso permite que você acesse e manipule facilmente partes específicas de sua página. Aqui estão alguns exemplos de seletores do jQuery:</p>
+    <p>Um dos recursos mais poderosos do jQuery é a capacidade de selecionar elementos HTML usando seletores. Isso
+        permite que você acesse e manipule facilmente partes específicas de sua página. Aqui estão alguns exemplos de
+        seletores do jQuery:</p>
 
+    <!-- Exemplos de Seletores do jQuery -->
     <pre>
     <code>
 // Selecionar todos os elementos &lt;p&gt;
@@ -37,31 +45,87 @@ $("#meu-id")
 
 // Selecionar elementos com um atributo específico
 $("[data-meu-atributo='valor']")
+
+// Selecionar o primeiro elemento &lt;p&gt;
+$("p:first")
+
+// Selecionar o último elemento &lt;p&gt;
+$("p:last")
+
+// Selecionar todos os elementos &lt;p&gt; exceto o primeiro
+$("p:not(:first)")
+
+// Selecionar todos os elementos &lt;p&gt; que contêm texto
+$("p:contains('texto')")
+
+// Selecionar todos os elementos &lt;input&gt; do tipo texto
+$("input[type='text']")
+
+// Selecionar todos os elementos &lt;a&gt; com um atributo href começando com "https://"
+$("a[href^='https://']")
+
+// Selecionar todos os elementos &lt;a&gt; com um atributo href terminando com ".pdf"
+$("a[href$='.pdf']")
     </code>
     </pre>
 
     <h2>Carregando o jQuery</h2>
 
-    <p>Para começar a usar o jQuery em seu projeto, você precisa baixar a biblioteca e incluí-la em seu documento HTML. Você pode baixar o jQuery diretamente do site oficial (https://jquery.com/) e, em seguida, carregá-lo em seu projeto da seguinte forma:</p>
+    <p>Você pode escolher entre carregar o jQuery pela internet ou a partir de uma pasta do servidor. Vejamos ambas as
+        opções, destacando suas vantagens e desvantagens:</p>
 
+    <!-- Carregando o jQuery pela Internet -->
+    <h3>Carregando o jQuery pela Internet (CDN)</h3>
+    <p>Um CDN (Content Delivery Network) é uma rede de servidores distribuídos globalmente que armazena cópias de
+        recursos, como bibliotecas JavaScript, para que possam ser entregues rapidamente aos usuários com base em sua
+        localização geográfica.</p>
     <pre>
     <code>
-&lt;script src="caminho-para-o-arquivo/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://code.jquery.com/jquery-3.6.0.min.js"&gt;&lt;/script&gt;
     </code>
     </pre>
+    <p><strong>Vantagens:</strong></p>
+    <ul>
+        <li>Rapidez no carregamento, pois o arquivo pode ser servido a partir de um servidor próximo ao usuário.</li>
+        <li>Maior probabilidade de já ter o arquivo em cache, se outros sites também usarem o mesmo CDN.</li>
+    </ul>
+    <p><strong>Desvantagens:</strong></p>
+    <ul>
+        <li>Dependência da disponibilidade e confiabilidade do CDN. Se o CDN estiver fora do ar, o jQuery pode não ser
+            carregado corretamente.</li>
+    </ul>
 
-    <p>Substitua "caminho-para-o-arquivo" pelo caminho onde você salvou o arquivo jQuery. Certifique-se de que este arquivo esteja no mesmo diretório que seu arquivo HTML ou especifique o caminho correto.</p>
+    <!-- Carregando o jQuery localmente -->
+    <h3>Carregando o jQuery a partir de uma pasta do servidor</h3>
+    <p>Para carregar o jQuery localmente, você precisa baixar o arquivo do site oficial (https://jquery.com/) e
+        incluí-lo em seu projeto. Aqui está como fazer isso:</p>
+    <pre>
+    <code>
+&lt;script src="caminho-para-o-arquivo/jquery-3.6.0.min.js"&gt;&lt;/script&gt;
+    </code>
+    </pre>
+    <p><strong>Vantagens:</strong></p>
+    <ul>
+        <li>Independência de terceiros. Seu projeto não depende da disponibilidade de um CDN externo.</li>
+    </ul>
+    <p><strong>Desvantagens:</strong></p>
+    <ul>
+        <li>Maior tempo de carregamento se o arquivo não estiver em cache, especialmente se o servidor estiver em uma
+            localização distante dos usuários.</li>
+        <li>Menor probabilidade de estar em cache se outros sites não compartilharem o mesmo arquivo.</li>
+    </ul>
 
+    <!-- Exemplo de Uso Básico com jQuery -->
     <h2>Exemplo de Uso Básico</h2>
 
     <p>Aqui está um exemplo simples de como usar o jQuery para ocultar um elemento HTML quando um botão é clicado:</p>
 
     <pre>
     <code>
-&lt;button id="ocultar">Ocultar Elemento</button&gt;
-&lt;p id="elemento">Este é um elemento que pode ser oculto.</p&gt;
+&lt;button id="ocultar">Ocultar Elemento&lt;/button&gt;
+<br>&lt;p id="elemento">Este é um elemento que pode ser oculto.&lt;/p&gt;
 
-&lt;script src="https://code.jquery.com/jquery-3.6.0.min.js"&gt;&lt;/script&gt;
+&lt;script src="caminho-para-o-arquivo/jquery-3.6.0.min.js"&gt;&lt;/script&gt;
 &lt;script&gt;
     // Quando o botão "Ocultar Elemento" é clicado
     $("#ocultar").click(function() {
@@ -71,8 +135,12 @@ $("[data-meu-atributo='valor']")
     </code>
     </pre>
 
-    <p>Neste exemplo, usamos a função `$()` do jQuery para selecionar elementos pelo seu ID e depois aplicamos a função `.hide()` para ocultar o elemento quando o botão é clicado.</p>
+    <p>Neste exemplo, usamos a função `$()` do jQuery para selecionar elementos pelo seu ID e depois aplicamos a função
+        `.hide()` para ocultar o elemento quando o botão é clicado.</p>
 
-    <p>Esta é apenas uma introdução ao jQuery. Ele oferece muitas outras funcionalidades para tornar o desenvolvimento web mais eficiente e interativo. Você pode explorar a documentação oficial do jQuery para aprender mais e aprimorar suas habilidades.</p>
+    <p>Esta é apenas uma introdução ao jQuery. Ele oferece muitas outras funcionalidades para tornar o desenvolvimento
+        web mais eficiente e interativo. Você pode explorar a documentação oficial do jQuery para aprender mais e
+        aprimorar suas habilidades.</p>
 </body>
+
 </html>
